@@ -1,0 +1,15 @@
+{
+  "_comment": "https://10.0.221.52/GGInterfaceApi/api/",
+  "ApiBaseUrl": "http://localhost:5218/api",
+  "UsersUrl": "/Users",
+  "LoginUrl": "/Login",
+  "EntitiesUrl":"/Entities",
+  "ServicesUrl": "/Services",
+  "SubmitUrl": "/Submit",
+  "SchemaUrl":"/Schema",
+  "SubmissionLogUrl": "/SubmissionLog",
+  "GetLogUrl": "/GetLog",
+  "SuggestionUrl": "/Suggestions",
+  "AdminUrl":"/Admins"
+
+}
