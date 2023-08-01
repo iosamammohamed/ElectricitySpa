@@ -5,6 +5,7 @@ import { ElectricityService } from '../../services/electricity.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { LookupsService } from '../../services/lookups.service';
 import { Area, City, Gov } from '../../models/Lookups';
+import { IDropdownSettings } from 'ng-multiselect-dropdown';
 
 @Component({
   selector: 'app-electricity-time-list',
@@ -12,9 +13,26 @@ import { Area, City, Gov } from '../../models/Lookups';
   styleUrls: ['./electricity-time-list.component.css']
 })
 export class ElectricityTimeListComponent implements OnInit {
-ApplyFilters() {
+dropdownSettings: any;
+dropdownList: any;
+selectedItems: any;
+onItemSelect($event: Event) {
 throw new Error('Method not implemented.');
 }
+onSelectAll($event: Event) {
+throw new Error('Method not implemented.');
+}
+
+  ApplyFilters(){
+
+  }
+
+
+AdminsResponse!: number[];
+AdminsDropdownList = [] as any;
+AdminsSelectedItems = [] as any;
+AdminsDropdownSettings! : IDropdownSettings;
+
 
   PagedResult!: PagedResult;
   PagedResultState!: State;
@@ -35,9 +53,7 @@ throw new Error('Method not implemented.');
 
   Areas!: Area[]
   AreasState!: State;
-AdminsDropdownSettings: any;
-AdminsDropdownList: any;
-AdminsSelectedItems: any;
+
 
 
   constructor(private electricityService: ElectricityService, private lookupsService: LookupsService) {

@@ -17,6 +17,7 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     AppComponent,
   ],
   imports: [
+    NgMultiSelectDropDownModule.forRoot(),
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
@@ -26,7 +27,7 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     NgxPaginationModule,
     AutocompleteLibModule,
     HttpClientModule,
-    NgMultiSelectDropDownModule.forRoot()
+
   ],
   providers: [
      //Load json Files on startup
