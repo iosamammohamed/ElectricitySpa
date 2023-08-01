@@ -12,6 +12,9 @@ import { Area, City, Gov } from '../../models/Lookups';
   styleUrls: ['./electricity-time-list.component.css']
 })
 export class ElectricityTimeListComponent implements OnInit {
+ApplyFilters() {
+throw new Error('Method not implemented.');
+}
 
   PagedResult!: PagedResult;
   PagedResultState!: State;
@@ -32,6 +35,9 @@ export class ElectricityTimeListComponent implements OnInit {
 
   Areas!: Area[]
   AreasState!: State;
+AdminsDropdownSettings: any;
+AdminsDropdownList: any;
+AdminsSelectedItems: any;
 
 
   constructor(private electricityService: ElectricityService, private lookupsService: LookupsService) {
